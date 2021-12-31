@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa Etária e Gênero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Verificador de idade </h1>
+    <section>
+        <div id='form-idade'>
+            <div id='idade'>
+                <p id='ano-nascimento'> Insira o ano de nascimento:
+                    <input type="number" name="anoNas" id="anoNas" placeholder="ex:  1967" max="2020" min="1898"></p>
+            </div>
+            <div id='form-gen'>
+                <p id='genero'> Insira o gênero:
+                    <input type="radio" name="radsex" id="mas" checked>
+                    <label for="mas"> Masculino </label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem"> Feminino </label></p>
+                <p ><input type="button" value="Verificar" id='botao' onclick="verificar()"></p>
+            </div>
+            <div id='res'> Preencha os campos corretamente. </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Enzo Campos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
