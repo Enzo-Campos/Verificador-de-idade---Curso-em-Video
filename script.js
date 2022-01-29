@@ -12,6 +12,7 @@ function verificar() {
         var radio = document.getElementsByName('radsex')
         var idade = Number(anoAtual) - Number(forAno.value)
         var img = document.createElement('img')
+        var telaUsuario = window.screen.width
         img.setAttribute('id', 'foto')
         img.style = 'border-radius: 20px;'
         if (radio[0].checked) {
